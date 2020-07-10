@@ -5,13 +5,13 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="keras-notify", 
-    version="0.0.1",
+    version="0.0.2",
     author="Sayantan Das",
     author_email="sayantandas30011998@gmail.com",
     description="A small notification package providing keras events on Telegram or Slack",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/forkbabu/keras-notify",
+    url="https://github.com/ucalyptus/keras-notify",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
