@@ -1,8 +1,9 @@
-# TensorFlow Notification Callback
+# Keras Notify Callback
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
-[![PyPI version](https://badge.fury.io/py/tf-notification-callback.svg)](https://badge.fury.io/py/tf-notification-callback)
+[![PyPI version](https://badge.fury.io/py/tf-notification-callback.svg)](https://badge.fury.io/py/keras-notify)
+
 
 A Tensorflow/Keras callback which sends information about your model training, on various messaging platforms.
 
@@ -11,7 +12,7 @@ A Tensorflow/Keras callback which sends information about your model training, o
 Using `pip`:
 
 ```bash
-pip install tf_notification_callback
+pip install keras-notify
 ```
 
 ## Usage
@@ -21,7 +22,7 @@ Import the required module and add it to the list callbacks while training your 
 **Example:**
 
 ```python
->>> from tf_notification_callback import TelegramCallback
+>>> from keras-notify import TelegramCallback
 >>> telegram_callback = TelegramCallback('<BotToken>',
                                          '<ChatID>',
 	                                 'CNN Model',
@@ -46,6 +47,7 @@ Import the required module and add it to the list callbacks while training your 
 	* Search for the bot you created and send it any random message.
 	* Go to this URL `https://api.telegram.org/bot<BOT_TOKEN>/getUpdates` (replace <BOT_TOKEN> with your bot token)
 	* Copy the `chat id` of the user you want to send messages to.
+	* You receive the `chat id` only if you send the message first and then go to the above url.
 3. Use the `TelegramCallback()` class.
 
 ```python
@@ -91,6 +93,3 @@ SlackCallback(bot_token=None, chat_id=None, modelName='model', loss_metrics=['lo
 * Zulip
 * Messages
 
-## Motivation
-
-As the Deep Learning models are getting more and more complex and computationally heavy, they take a very long time to train. During my internship, people used to start the model training and left it overnight. They could only check its progress the next day. So I thought it would be great if there was a simple way to get the training info remotely on their devices.
