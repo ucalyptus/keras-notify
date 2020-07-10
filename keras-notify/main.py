@@ -1,12 +1,12 @@
 import requests
-import keras
+import tensorflow as tf
 import telegram
 import matplotlib.pyplot as plt
 
 from io import BytesIO
 
 
-class ParentCallback(keras.callbacks.Callback):
+class ParentCallback(tf.keras.callbacks.Callback):
 
     def __init__(self,
                  modelName = 'model',
