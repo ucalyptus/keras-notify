@@ -2,7 +2,7 @@
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
-[![PyPI version](https://badge.fury.io/py/tf-notification-callback.svg)](https://badge.fury.io/py/keras-notify)
+[![PyPI version](https://badge.fury.io/py/keras-notify.svg)](https://badge.fury.io/py/keras-notify)
 
 
 A Tensorflow/Keras callback which sends information about your model training, on various messaging platforms.
